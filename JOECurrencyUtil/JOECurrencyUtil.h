@@ -34,15 +34,78 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma mark JOECurrencyUtil Interface
+
+/*!  This is a collection of utility methods for dealing with currency. It allows you to handle input into a textfield or similiar UI, formatting the number correctly.
+*/
+
 @interface JOECurrencyUtil : NSObject
 
+
+///-----------------------------------
+/// @name Decimal From Currency String
+///-----------------------------------
+
+/*! Method converts a string formatted as currency to a decimal number object with a scale of 2.
+ 
+    @b Example: @"$10,545.32" -> 10545.32
+
+    @param string NSString argument to be converted to a decimal number
+    @return The resulting NSDecimalNumber object.
+*/
+
 + (NSDecimalNumber *)decimalNumberFromCurrencyString:(NSString *)string;
+
+
+/*! Method converts a string formatted as currency to a decimal number object with a given scale argument.
+ 
+    @b Example: Given scale:4, @"$0.0045" -> 0.0045
+
+    @param string NSString argument to be converted to a decimal number
+    @param scale The number of digits a rounded value should have after its decimal point.
+    @return The resulting NSDecimalNumber object.
+*/
 + (NSDecimalNumber *)decimalNumberFromCurrencyString:(NSString *)string scale:(short)scale;
 
-// String conversion methods for currency related subjects
+
+///------------------------------------------
+/// @name Currency String From Decimal Number
+///------------------------------------------
+
+/*! Method converts a decimal number to a string with 2 digits after its decimal point.
+ 
+    @param number The NSDecimalNumber to be converted to a NSString
+    @return The resulting NSString.
+*/
+
 + (NSString *)stringFromDecimalNumber:(NSDecimalNumber *)number;
+
+/*! Method converts a decimal number to a string with a given scale.
+ 
+    @param number The NSDecimalNumber to be converted to a NSString
+    @param scale The number of digits a rounded value should have after its decimal point.
+    @return The resulting NSString.
+*/
+
 + (NSString *)stringFromDecimalNumber:(NSDecimalNumber *)number scale:(short)scale;
+
+
+///-------------------------------
+/// @name Unformatting Text
+///-------------------------------
+
+/*! This method cleans a NSString representing currency.  It takes an inverted decimalDigitCharacterSet to remove currency symbols, commas, and decimals.
+ 
+    @param string The string to be cleaned.
+    @return The resulting digit only string.
+*/
+
 + (NSString *)cleanCurrencyString:(NSString *)string;
+
+/*! Returns a character set that includes everything but decimal digits and the current locale's decimal seperator.
+ 
+    @return Returns a character set.
+*/
 
 + (NSCharacterSet *)removableCharacterSet;
 

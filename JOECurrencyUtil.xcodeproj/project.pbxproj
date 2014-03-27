@@ -68,13 +68,13 @@
 		D8A4629D18E4D8B900FF0F11 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D8A4629E18E4D8B900FF0F11 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D8A4629F18E4D8B900FF0F11 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D8A462A118E4D8B900FF0F11 /* Programming Guide-template.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Programming Guide-template.markdown"; sourceTree = "<group>"; };
-		D8A462A218E4D8B900FF0F11 /* Setup Guide-template.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Setup Guide-template.markdown"; sourceTree = "<group>"; };
-		D8A462A318E4D8B900FF0F11 /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppledocSettings.plist; path = ../AppledocSettings.plist; sourceTree = "<group>"; };
+		D8A462A118E4D8B900FF0F11 /* Programming Guide-template.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Programming Guide-template.markdown"; path = "Documentation/Programming Guide-template.markdown"; sourceTree = SOURCE_ROOT; };
+		D8A462A218E4D8B900FF0F11 /* Setup Guide-template.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Setup Guide-template.markdown"; path = "Documentation/Setup Guide-template.markdown"; sourceTree = SOURCE_ROOT; };
+		D8A462A318E4D8B900FF0F11 /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = SOURCE_ROOT; };
 		D8A462A518E4D8B900FF0F11 /* JOECurrencyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOECurrencyUtil.h; sourceTree = "<group>"; };
 		D8A462A618E4D8B900FF0F11 /* JOECurrencyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOECurrencyUtil.m; sourceTree = "<group>"; };
-		D8A462A718E4D8B900FF0F11 /* Readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Readme.markdown; path = ../Readme.markdown; sourceTree = "<group>"; };
-		D8A462A818E4D8B900FF0F11 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D8A462A718E4D8B900FF0F11 /* Readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.markdown; sourceTree = SOURCE_ROOT; };
+		D8A462A818E4D8B900FF0F11 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -574,6 +574,7 @@
 				D8A4628B18E4D84C00FF0F11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8A4628C18E4D84C00FF0F11 /* Build configuration list for PBXNativeTarget "JOECurrencyUtilTests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +583,7 @@
 				D8A4628E18E4D84C00FF0F11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8A4628F18E4D84C00FF0F11 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +592,7 @@
 				D8A4629118E4D84C00FF0F11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

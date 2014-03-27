@@ -34,7 +34,53 @@
 
 #import "JOECurrencyUtil.h"
 
+#pragma mark JOECurrencyUtil
+
 @implementation JOECurrencyUtil
+
+#pragma mark - Decimal From Currency String
+
++ (NSDecimalNumber *)decimalNumberFromCurrencyString:(NSString *)string
+{
+    return [self decimalNumberFromCurrencyString:string scale:2];
+}
+
+
++ (NSDecimalNumber *)decimalNumberFromCurrencyString:(NSString *)string scale:(short)scale
+{
+    NSString *cleanString = [self cleanCurrencyString:string];
+    unsigned long long mantissa = strtoull([cleanString UTF8String], NULL, 10);
+    NSDecimalNumber *decimalNumber = [NSDecimalNumber decimalNumberWithMantissa:mantissa exponent:(-1 * scale) isNegative:NO];
+    
+    return decimalNumber;
+}
+
+
+#pragma mark - Currency String From Decimal Number
+
++ (NSString *)stringFromDecimalNumber:(NSDecimalNumber *)number
+{
+    return [self stringFromDecimalNumber:number scale:2];
+}
+
+
++ (NSString *)stringFromDecimalNumber:(NSDecimalNumber *)number scale:(short)scale
+{
+    return [[self currencyFormatter:scale] stringFromNumber:number];
+}
+
+
+#pragma mark - Unformatting Text
+
++ (NSString *)cleanCurrencyString:(NSString *)string
+{
+    NSCharacterSet *invertedDecimalSet = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];
+    NSArray *components = [string componentsSeparatedByCharactersInSet:invertedDecimalSet];
+    NSString *_cleanString = [components componentsJoinedByString:@""];
+    
+    return _cleanString;
+}
+
 
 + (NSCharacterSet *)removableCharacterSet
 {
@@ -46,70 +92,8 @@
     return charactersToRemove;
 }
 
-/*! Method converts a string formatted as currency to a decimal number object with a scale of 2.
- 
- @b Example: @"$10,545.32" -> 10545.32
- 
- @param string NSString argument to be converted to a decimal number
- @return The resulting NSDecimalNumber object.
- */
-+ (NSDecimalNumber *)decimalNumberFromCurrencyString:(NSString *)string
-{
-    return [self decimalNumberFromCurrencyString:string scale:2];
-}
 
-/*! Method converts a string formatted as currency to a decimal number object with a given scale argument.
- 
- @b Example: Given scale:4, @"$0.0045" -> 0.0045
- 
- @param string NSString argument to be converted to a decimal number
- @param scale The number of digits a rounded value should have after its decimal point.
- @return The resulting NSDecimalNumber object.
- */
-+ (NSDecimalNumber *)decimalNumberFromCurrencyString:(NSString *)string scale:(short)scale
-{
-    NSString *cleanString = [self cleanCurrencyString:string];
-    unsigned long long mantissa = strtoull([cleanString UTF8String], NULL, 10);
-    NSDecimalNumber *decimalNumber = [NSDecimalNumber decimalNumberWithMantissa:mantissa exponent:(-1 * scale) isNegative:NO];
-    
-    return decimalNumber;
-}
-
-/*! Method converts a decimal number to a string with 2 digits after its decimal point.
- 
- @param number The NSDecimalNumber to be converted to a NSString
- @return The resulting NSString.
- */
-+ (NSString *)stringFromDecimalNumber:(NSDecimalNumber *)number
-{
-    return [self stringFromDecimalNumber:number scale:2];
-}
-
-/*! Method converts a decimal number to a string with a given scale.
- 
- @param number The NSDecimalNumber to be converted to a NSString
- @param scale The number of digits a rounded value should have after its decimal point.
- @return The resulting NSString.
- */
-+ (NSString *)stringFromDecimalNumber:(NSDecimalNumber *)number scale:(short)scale
-{
-    return [[self currencyFormatter:scale] stringFromNumber:number];
-}
-
-/*! This method cleans a NSString representing currency.  It takes an inverted decimalDigitCharacterSet to remove currency symbols, commas, and decimals.
- 
- @param string The string to be cleaned.
- @return The resulting digit only string.
- */
-+ (NSString *)cleanCurrencyString:(NSString *)string
-{
-    NSCharacterSet *invertedDecimalSet = [[NSCharacterSet decimalDigitCharacterSet] invertedSet];
-    NSArray *components = [string componentsSeparatedByCharactersInSet:invertedDecimalSet];
-    NSString *_cleanString = [components componentsJoinedByString:@""];
-    
-    return _cleanString;
-}
-
+#pragma mark - Private Methods
 
 + (NSNumberFormatter *)currencyFormatter:(short)scale
 {
