@@ -1,5 +1,5 @@
 //
-//  JOEViewController.h
+//  ViewController.h
 //  JOECurrencyUtil
 //
 //  Created by Joseph Collins on 3/27/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JOEViewController : UIViewController
+@interface ViewController : UIViewController
 
 @end

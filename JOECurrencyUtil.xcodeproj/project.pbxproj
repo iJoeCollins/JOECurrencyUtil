@@ -24,18 +24,18 @@
 		D8A4625018E4D84B00FF0F11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A4624F18E4D84B00FF0F11 /* Foundation.framework */; };
 		D8A4625218E4D84B00FF0F11 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A4625118E4D84B00FF0F11 /* CoreGraphics.framework */; };
 		D8A4625418E4D84B00FF0F11 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A4625318E4D84B00FF0F11 /* UIKit.framework */; };
-		D8A4625A18E4D84B00FF0F11 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8A4625818E4D84B00FF0F11 /* InfoPlist.strings */; };
-		D8A4625C18E4D84B00FF0F11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A4625B18E4D84B00FF0F11 /* main.m */; };
-		D8A4626018E4D84B00FF0F11 /* JOEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A4625F18E4D84B00FF0F11 /* JOEAppDelegate.m */; };
-		D8A4626318E4D84B00FF0F11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A4626118E4D84B00FF0F11 /* Main.storyboard */; };
-		D8A4626618E4D84B00FF0F11 /* JOEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A4626518E4D84B00FF0F11 /* JOEViewController.m */; };
-		D8A4626818E4D84B00FF0F11 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D8A4626718E4D84B00FF0F11 /* .gitignore */; };
-		D8A4626A18E4D84B00FF0F11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A4626918E4D84B00FF0F11 /* Images.xcassets */; };
 		D8A4627118E4D84C00FF0F11 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A4627018E4D84C00FF0F11 /* XCTest.framework */; };
 		D8A4627218E4D84C00FF0F11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A4624F18E4D84B00FF0F11 /* Foundation.framework */; };
 		D8A4627318E4D84C00FF0F11 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8A4625318E4D84B00FF0F11 /* UIKit.framework */; };
 		D8A4627B18E4D84C00FF0F11 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8A4627918E4D84C00FF0F11 /* InfoPlist.strings */; };
 		D8A4627D18E4D84C00FF0F11 /* JOECurrencyUtilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A4627C18E4D84C00FF0F11 /* JOECurrencyUtilTests.m */; };
+		D8A462AA18E4D8B900FF0F11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A4629418E4D8B900FF0F11 /* Main.storyboard */; };
+		D8A462AB18E4D8B900FF0F11 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8A4629618E4D8B900FF0F11 /* InfoPlist.strings */; };
+		D8A462AC18E4D8B900FF0F11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A4629818E4D8B900FF0F11 /* Images.xcassets */; };
+		D8A462AD18E4D8B900FF0F11 /* JOEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A4629A18E4D8B900FF0F11 /* JOEAppDelegate.m */; };
+		D8A462AF18E4D8B900FF0F11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A4629E18E4D8B900FF0F11 /* ViewController.m */; };
+		D8A462B018E4D8B900FF0F11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A4629F18E4D8B900FF0F11 /* main.m */; };
+		D8A462B418E4D8B900FF0F11 /* JOECurrencyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A462A618E4D8B900FF0F11 /* JOECurrencyUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,27 +53,28 @@
 		D8A4624F18E4D84B00FF0F11 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8A4625118E4D84B00FF0F11 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D8A4625318E4D84B00FF0F11 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		D8A4625718E4D84B00FF0F11 /* JOECurrencyUtil-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JOECurrencyUtil-Info.plist"; sourceTree = "<group>"; };
-		D8A4625918E4D84B00FF0F11 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D8A4625B18E4D84B00FF0F11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D8A4625D18E4D84B00FF0F11 /* JOECurrencyUtil-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JOECurrencyUtil-Prefix.pch"; sourceTree = "<group>"; };
-		D8A4625E18E4D84B00FF0F11 /* JOEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOEAppDelegate.h; sourceTree = "<group>"; };
-		D8A4625F18E4D84B00FF0F11 /* JOEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOEAppDelegate.m; sourceTree = "<group>"; };
-		D8A4626218E4D84B00FF0F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D8A4626418E4D84B00FF0F11 /* JOEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOEViewController.h; sourceTree = "<group>"; };
-		D8A4626518E4D84B00FF0F11 /* JOEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOEViewController.m; sourceTree = "<group>"; };
-		D8A4626718E4D84B00FF0F11 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		D8A4626918E4D84B00FF0F11 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D8A4626F18E4D84C00FF0F11 /* JOECurrencyUtilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JOECurrencyUtilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A4627018E4D84C00FF0F11 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D8A4627818E4D84C00FF0F11 /* JOECurrencyUtilTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JOECurrencyUtilTests-Info.plist"; sourceTree = "<group>"; };
 		D8A4627A18E4D84C00FF0F11 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8A4627C18E4D84C00FF0F11 /* JOECurrencyUtilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOECurrencyUtilTests.m; sourceTree = "<group>"; };
-		D8A4628118E4D84C00FF0F11 /* AppledocSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppledocSettings.plist; sourceTree = "<group>"; };
-		D8A4628318E4D84C00FF0F11 /* Programming Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Programming Guide-template.markdown"; sourceTree = "<group>"; };
-		D8A4628418E4D84C00FF0F11 /* Setup Guide-template.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Setup Guide-template.markdown"; sourceTree = "<group>"; };
-		D8A4628518E4D84C00FF0F11 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		D8A4628618E4D84C00FF0F11 /* Readme.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.markdown; sourceTree = "<group>"; };
+		D8A4629518E4D8B900FF0F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8A4629718E4D8B900FF0F11 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8A4629818E4D8B900FF0F11 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D8A4629918E4D8B900FF0F11 /* JOEAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOEAppDelegate.h; sourceTree = "<group>"; };
+		D8A4629A18E4D8B900FF0F11 /* JOEAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOEAppDelegate.m; sourceTree = "<group>"; };
+		D8A4629B18E4D8B900FF0F11 /* JOECurrencyUtil-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "JOECurrencyUtil-Info.plist"; sourceTree = "<group>"; };
+		D8A4629C18E4D8B900FF0F11 /* JOECurrencyUtil-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JOECurrencyUtil-Prefix.pch"; sourceTree = "<group>"; };
+		D8A4629D18E4D8B900FF0F11 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D8A4629E18E4D8B900FF0F11 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D8A4629F18E4D8B900FF0F11 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8A462A118E4D8B900FF0F11 /* Programming Guide-template.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Programming Guide-template.markdown"; sourceTree = "<group>"; };
+		D8A462A218E4D8B900FF0F11 /* Setup Guide-template.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Setup Guide-template.markdown"; sourceTree = "<group>"; };
+		D8A462A318E4D8B900FF0F11 /* AppledocSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppledocSettings.plist; path = ../AppledocSettings.plist; sourceTree = "<group>"; };
+		D8A462A518E4D8B900FF0F11 /* JOECurrencyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOECurrencyUtil.h; sourceTree = "<group>"; };
+		D8A462A618E4D8B900FF0F11 /* JOECurrencyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOECurrencyUtil.m; sourceTree = "<group>"; };
+		D8A462A718E4D8B900FF0F11 /* Readme.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Readme.markdown; path = ../Readme.markdown; sourceTree = "<group>"; };
+		D8A462A818E4D8B900FF0F11 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +104,10 @@
 		D8A4624318E4D84B00FF0F11 = {
 			isa = PBXGroup;
 			children = (
-				D8A4625518E4D84B00FF0F11 /* JOECurrencyUtil */,
+				D8A462A418E4D8B900FF0F11 /* JOECurrencyUtil */,
+				D8A4629218E4D8B900FF0F11 /* Demo */,
+				D8A462A018E4D8B900FF0F11 /* Documentation */,
 				D8A4627618E4D84C00FF0F11 /* JOECurrencyUtilTests */,
-				D8A4628018E4D84C00FF0F11 /* Documentation */,
 				D8A4624E18E4D84B00FF0F11 /* Frameworks */,
 				D8A4624D18E4D84B00FF0F11 /* Products */,
 			);
@@ -131,32 +133,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D8A4625518E4D84B00FF0F11 /* JOECurrencyUtil */ = {
-			isa = PBXGroup;
-			children = (
-				D8A4625E18E4D84B00FF0F11 /* JOEAppDelegate.h */,
-				D8A4625F18E4D84B00FF0F11 /* JOEAppDelegate.m */,
-				D8A4626118E4D84B00FF0F11 /* Main.storyboard */,
-				D8A4626418E4D84B00FF0F11 /* JOEViewController.h */,
-				D8A4626518E4D84B00FF0F11 /* JOEViewController.m */,
-				D8A4626718E4D84B00FF0F11 /* .gitignore */,
-				D8A4626918E4D84B00FF0F11 /* Images.xcassets */,
-				D8A4625618E4D84B00FF0F11 /* Supporting Files */,
-			);
-			path = JOECurrencyUtil;
-			sourceTree = "<group>";
-		};
-		D8A4625618E4D84B00FF0F11 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D8A4625718E4D84B00FF0F11 /* JOECurrencyUtil-Info.plist */,
-				D8A4625818E4D84B00FF0F11 /* InfoPlist.strings */,
-				D8A4625B18E4D84B00FF0F11 /* main.m */,
-				D8A4625D18E4D84B00FF0F11 /* JOECurrencyUtil-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		D8A4627618E4D84C00FF0F11 /* JOECurrencyUtilTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,24 +151,90 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D8A4628018E4D84C00FF0F11 /* Documentation */ = {
+		D8A4629218E4D8B900FF0F11 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				D8A4628118E4D84C00FF0F11 /* AppledocSettings.plist */,
-				D8A4628518E4D84C00FF0F11 /* LICENSE */,
-				D8A4628618E4D84C00FF0F11 /* Readme.markdown */,
-				D8A4628218E4D84C00FF0F11 /* Programming Guides */,
+				D8A462B818E4D8FD00FF0F11 /* Application Delegate */,
+				D8A462BA18E4D92000FF0F11 /* View Controllers */,
+				D8A462B918E4D90B00FF0F11 /* Storyboards */,
+				D8A462BB18E4D93400FF0F11 /* Resources */,
+				D8A462BC18E4D93C00FF0F11 /* Supporting FIles */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		D8A462A018E4D8B900FF0F11 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				D8A462A318E4D8B900FF0F11 /* AppledocSettings.plist */,
+				D8A462A818E4D8B900FF0F11 /* LICENSE */,
+				D8A462B718E4D8CF00FF0F11 /* Programming Guides */,
+				D8A462A718E4D8B900FF0F11 /* Readme.markdown */,
 			);
 			path = Documentation;
 			sourceTree = "<group>";
 		};
-		D8A4628218E4D84C00FF0F11 /* Programming Guides */ = {
+		D8A462A418E4D8B900FF0F11 /* JOECurrencyUtil */ = {
 			isa = PBXGroup;
 			children = (
-				D8A4628318E4D84C00FF0F11 /* Programming Guide-template.markdown */,
-				D8A4628418E4D84C00FF0F11 /* Setup Guide-template.markdown */,
+				D8A462A518E4D8B900FF0F11 /* JOECurrencyUtil.h */,
+				D8A462A618E4D8B900FF0F11 /* JOECurrencyUtil.m */,
+			);
+			path = JOECurrencyUtil;
+			sourceTree = "<group>";
+		};
+		D8A462B718E4D8CF00FF0F11 /* Programming Guides */ = {
+			isa = PBXGroup;
+			children = (
+				D8A462A118E4D8B900FF0F11 /* Programming Guide-template.markdown */,
+				D8A462A218E4D8B900FF0F11 /* Setup Guide-template.markdown */,
 			);
 			name = "Programming Guides";
+			sourceTree = "<group>";
+		};
+		D8A462B818E4D8FD00FF0F11 /* Application Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				D8A4629918E4D8B900FF0F11 /* JOEAppDelegate.h */,
+				D8A4629A18E4D8B900FF0F11 /* JOEAppDelegate.m */,
+			);
+			name = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		D8A462B918E4D90B00FF0F11 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D8A4629418E4D8B900FF0F11 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		D8A462BA18E4D92000FF0F11 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D8A4629D18E4D8B900FF0F11 /* ViewController.h */,
+				D8A4629E18E4D8B900FF0F11 /* ViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D8A462BB18E4D93400FF0F11 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8A4629818E4D8B900FF0F11 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D8A462BC18E4D93C00FF0F11 /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
+				D8A4629618E4D8B900FF0F11 /* InfoPlist.strings */,
+				D8A4629B18E4D8B900FF0F11 /* JOECurrencyUtil-Info.plist */,
+				D8A4629C18E4D8B900FF0F11 /* JOECurrencyUtil-Prefix.pch */,
+				D8A4629F18E4D8B900FF0F11 /* main.m */,
+			);
+			name = "Supporting FIles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,10 +315,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8A4625A18E4D84B00FF0F11 /* InfoPlist.strings in Resources */,
-				D8A4626A18E4D84B00FF0F11 /* Images.xcassets in Resources */,
-				D8A4626818E4D84B00FF0F11 /* .gitignore in Resources */,
-				D8A4626318E4D84B00FF0F11 /* Main.storyboard in Resources */,
+				D8A462AC18E4D8B900FF0F11 /* Images.xcassets in Resources */,
+				D8A462AB18E4D8B900FF0F11 /* InfoPlist.strings in Resources */,
+				D8A462AA18E4D8B900FF0F11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,9 +352,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8A4625C18E4D84B00FF0F11 /* main.m in Sources */,
-				D8A4626018E4D84B00FF0F11 /* JOEAppDelegate.m in Sources */,
-				D8A4626618E4D84B00FF0F11 /* JOEViewController.m in Sources */,
+				D8A462AD18E4D8B900FF0F11 /* JOEAppDelegate.m in Sources */,
+				D8A462B018E4D8B900FF0F11 /* main.m in Sources */,
+				D8A462AF18E4D8B900FF0F11 /* ViewController.m in Sources */,
+				D8A462B418E4D8B900FF0F11 /* JOECurrencyUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,26 +378,26 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D8A4625818E4D84B00FF0F11 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8A4625918E4D84B00FF0F11 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D8A4626118E4D84B00FF0F11 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8A4626218E4D84B00FF0F11 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D8A4627918E4D84C00FF0F11 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D8A4627A18E4D84C00FF0F11 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D8A4629418E4D8B900FF0F11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8A4629518E4D8B900FF0F11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8A4629618E4D8B900FF0F11 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8A4629718E4D8B900FF0F11 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -439,8 +481,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JOECurrencyUtil/JOECurrencyUtil-Prefix.pch";
-				INFOPLIST_FILE = "JOECurrencyUtil/JOECurrencyUtil-Info.plist";
+				GCC_PREFIX_HEADER = "Demo/JOECurrencyUtil-Prefix.pch";
+				INFOPLIST_FILE = "Demo/JOECurrencyUtil-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -452,8 +494,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JOECurrencyUtil/JOECurrencyUtil-Prefix.pch";
-				INFOPLIST_FILE = "JOECurrencyUtil/JOECurrencyUtil-Info.plist";
+				GCC_PREFIX_HEADER = "Demo/JOECurrencyUtil-Prefix.pch";
+				INFOPLIST_FILE = "Demo/JOECurrencyUtil-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -469,7 +511,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JOECurrencyUtil/JOECurrencyUtil-Prefix.pch";
+				GCC_PREFIX_HEADER = "Demo/JOECurrencyUtil-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -491,7 +533,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JOECurrencyUtil/JOECurrencyUtil-Prefix.pch";
+				GCC_PREFIX_HEADER = "Demo/JOECurrencyUtil-Prefix.pch";
 				INFOPLIST_FILE = "JOECurrencyUtilTests/JOECurrencyUtilTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
