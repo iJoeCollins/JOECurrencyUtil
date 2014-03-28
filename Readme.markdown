@@ -1,7 +1,7 @@
 Abstract
 --------
 
-This is a collection of utility methods for dealing with currency. It allows you to handle input into a textfield or similiar UI, formatting the number correctly.
+This is a collection of utility methods for dealing with currency.
 
 Setup
 -----
